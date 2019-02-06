@@ -11,12 +11,13 @@
     "test": "mocha dist/**/*.spec.js"
   },
   "dependencies": {
-    "@types/mocha": "^5.2.5",
     "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
     "@types/node": "^10.12.21"
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "mocha": "^5.2.0",
     "tslint": "^5.12.1",
     "typescript": "^3.3.1"
   }

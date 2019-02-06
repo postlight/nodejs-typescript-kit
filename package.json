@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-ts-starter-kit",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/JadTermsani/nodejs-typescript-kit.git",
+  "author": "JadTermsani <jadtermsani@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1"
+  }
+}

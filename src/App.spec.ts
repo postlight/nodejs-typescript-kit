@@ -1,5 +1,5 @@
-const { add } = require('./App');
-const chai = require('chai');
+import chai from 'chai';
+import { add } from './App';
 
 const should = chai.should();
 

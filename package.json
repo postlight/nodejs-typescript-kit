@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@types/mocha": "^5.2.5",
+    "@types/chai": "^4.1.7",
     "@types/node": "^10.12.21"
   },
   "devDependencies": {

@@ -34,3 +34,19 @@ yarn test:watch
 ```bash
 yarn lint
 ```
+
+## Development
+
+For running `.ts` files
+
+```bash
+yarn ts-node <file.ts>
+```
+
+For development mode
+
+> _considering your entry point is `./src/index.ts`_ > _nodemon will watch the `src` folder and wait for changes made to any `.ts` files and will ignore test files_
+
+```bash
+yarn nodemon
+```

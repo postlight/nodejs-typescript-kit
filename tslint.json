@@ -10,6 +10,7 @@
     "no-consecutive-blank-lines": false,
     "quotemark": [true, "single"],
     "arrow-parens": [true, "ban-single-arg-parens"],
+    "trailing-comma": [false],
     "no-console": {
       "severity": "warning",
       "options": ["debug", "info", "log", "time", "timeEnd", "trace"]

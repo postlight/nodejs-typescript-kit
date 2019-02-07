@@ -17,8 +17,16 @@ yarn build
 
 ## Running tests
 
+Run all tests
+
 ```bash
 yarn test
+```
+
+Run and watch all tests
+
+```bash
+yarn test:watch
 ```
 
 ## Linting

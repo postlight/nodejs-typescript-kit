@@ -9,10 +9,24 @@
 yarn install
 ```
 
-## Building the App
+## Development
+
+For running `.ts` files
 
 ```bash
-yarn build
+yarn ts-node <file.ts>
+```
+
+For development mode
+
+```bash
+yarn nodemon
+```
+
+## Linting
+
+```bash
+yarn lint
 ```
 
 ## Running tests
@@ -29,22 +43,8 @@ Run and watch all tests
 yarn test:watch
 ```
 
-## Linting
+## Building the App
 
 ```bash
-yarn lint
-```
-
-## Development
-
-For running `.ts` files
-
-```bash
-yarn ts-node <file.ts>
-```
-
-For development mode
-
-```bash
-yarn nodemon
+yarn build
 ```

@@ -10,8 +10,6 @@
     "lint": "tslint -c tslint.json -p tsconfig.json ./src/**/*.ts --fix && eslint ./src --fix",
     "test": "jest",
     "test:watch": "jest --watch",
-    "ts-node": "ts-node",
-    "nodemon": "nodemon",
     "prettify": "prettier --write ./src/**/*.{ts,js}"
   },
   "dependencies": {

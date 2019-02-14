@@ -13,10 +13,10 @@
     "prettify": "prettier --write ./src/**/*.{ts,js}"
   },
   "dependencies": {
-    "@types/node": "^10.12.21"
   },
   "devDependencies": {
     "@types/jest": "^24.0.0",
+    "@types/node": "^10.12.21",
     "eslint": "^5.13.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.0.0",

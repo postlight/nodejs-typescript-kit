@@ -14,5 +14,7 @@
       "*": ["node_modules/@types/*", "src/types/*"]
     },
     "esModuleInterop": true
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }

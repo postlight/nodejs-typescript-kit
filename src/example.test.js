@@ -1,5 +1,5 @@
-import { add } from './example';
+import add from './example';
 
 test('basic test', () => {
-    expect(add(2, 4)).toBe(6);
+  expect(add(2, 4)).toBe(6);
 });

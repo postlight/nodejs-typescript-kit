@@ -19,18 +19,24 @@ And you can directly start coding!
 
 ## Starter Kit Documentation
 
+You can use **npm** or **yarn** while developing.
+
 ### Development
 
 For running `.ts` files:
 
 ```bash
 yarn ts-node <file.ts>
+---
+npm run ts-node <file.ts>
 ```
 
 For development mode:
 
 ```bash
 yarn nodemon
+---
+npm run nodemon
 ```
 
 _[nodemon](https://www.npmjs.com/package/nodemon) will automatically restart the aplication when file changes are detected_
@@ -40,6 +46,9 @@ _[nodemon](https://www.npmjs.com/package/nodemon) will automatically restart the
 ```bash
 yarn lint
 yarn prettify
+---
+npm run lint
+npm run prettify
 ```
 
 VSCode Users should add this to their workspace settings to integrate JS/TS Linting in general:
@@ -57,18 +66,24 @@ Run all tests:
 
 ```bash
 yarn test
+---
+npm test
 ```
 
 Run and watch all tests:
 
 ```bash
 yarn test:watch
+---
+npm run test:watch
 ```
 
 ### Building the App
 
 ```bash
 yarn build
+---
+npm run build
 ```
 
 ## Building your app with CircleCI

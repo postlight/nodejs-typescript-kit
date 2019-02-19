@@ -46,7 +46,7 @@ For development mode:
 yarn nodemon
 ```
 
-_[nodemon](https://www.npmjs.com/package/nodemon) will automatically restart the application when file changes are detected_
+[nodemon](https://www.npmjs.com/package/nodemon) will automatically restart the application when file changes are detected. This is useful if the tool you're building executes code when run.
 
 ### Linting + Prettier
 

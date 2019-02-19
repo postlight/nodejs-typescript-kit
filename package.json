@@ -10,7 +10,9 @@
     "lint": "eslint ./src --ext .ts && eslint ./src",
     "test": "jest",
     "test:watch": "jest --watch",
-    "prettify": "prettier --write ./src/**/*.{ts,js}"
+    "prettify": "prettier --write ./src/**/*.{ts,js}",
+    "ts-node": "ts-node",
+    "nodemon": "nodemon"
   },
   "dependencies": {},
   "devDependencies": {

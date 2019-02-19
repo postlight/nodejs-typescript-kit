@@ -24,6 +24,8 @@ npm install
 
 And you can directly start coding!
 
+![startekit](https://user-images.githubusercontent.com/32297675/53011741-c68e9200-3449-11e9-8746-01bcc0fff247.gif)
+
 ## Starter Kit Documentation
 
 ### Development

@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "lint": "eslint ./src --ext .ts && eslint ./src",
+    "lint": "eslint ./src --ext .ts,.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "prettify": "prettier --write ./src/**/*.{ts,js}",

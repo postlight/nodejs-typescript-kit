@@ -32,9 +32,9 @@ And you can directly start coding!
 
 ### Development
 
-For development, we'll assume you're using `yarn`, but if you're using `npm` instead, adjust the commands appropriately (namely, replace `yarn` with `npm run`.
+For development, we'll assume you're using `yarn`, but if you're using `npm` instead, adjust the commands appropriately (namely, replace `yarn` with `npm run`).
 
-For running `.ts` files:
+For running an individual `.ts` file:
 
 ```bash
 yarn ts-node <file.ts>

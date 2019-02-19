@@ -5,7 +5,7 @@
 
 ## Creating a project
 
-Create the prject by using **npx**:
+Create the project by using **npx**:
 
 _[npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher_
 
@@ -46,7 +46,7 @@ yarn nodemon
 npm run nodemon
 ```
 
-_[nodemon](https://www.npmjs.com/package/nodemon) will automatically restart the aplication when file changes are detected_
+_[nodemon](https://www.npmjs.com/package/nodemon) will automatically restart the application when file changes are detected_
 
 ### Linting + Prettier
 
@@ -97,7 +97,8 @@ npm run build
 
 Having already pushed your project to your favorite git-repository hosting service, you're one click away from integrating your app with CircleCI.
 
-- Press `Add Projects`.
+- Login to [CircleCI](https://circleci.com/)
+- On the left side menu, press `Add Projects`.
 - Pinpoint your project and press `Set Up Project`.
 - Choose `Linux` as the OS and `Node` as the language.
 - Press `Start Building`, and you're all set! :tada:

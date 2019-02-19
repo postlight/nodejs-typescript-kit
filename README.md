@@ -12,14 +12,19 @@ _[npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d
 ```bash
 npx node-typescript-starter-kit my-awesome-project
 cd my-awesome-project
+```
+
+Install dependencies using either **yarn** or **npm**
+
+```bash
 yarn install
+---
+npm install
 ```
 
 And you can directly start coding!
 
 ## Starter Kit Documentation
-
-You can use **npm** or **yarn** while developing.
 
 ### Development
 

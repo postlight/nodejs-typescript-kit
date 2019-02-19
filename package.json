@@ -9,7 +9,7 @@
     "build": "tsc",
     "lint": "eslint ./src --ext .ts && eslint ./src",
     "test": "jest",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --watchAll",
     "prettify": "prettier --write ./src/**/*.{ts,js}",
     "ts-node": "ts-node",
     "nodemon": "nodemon"

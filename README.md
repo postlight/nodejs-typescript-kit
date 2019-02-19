@@ -10,7 +10,7 @@ Create the prject by using **npx**:
 _[npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher_
 
 ```bash
-npx jad-node-ts-kit my-awesome-project
+npx node-typescript-starter-kit my-awesome-project
 cd my-awesome-project
 yarn install
 ```

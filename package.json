@@ -10,7 +10,6 @@
     "lint": "eslint ./src --ext .ts,.js --fix",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "prettify": "prettier --write ./src/**/*.{ts,js}",
     "ts-node": "ts-node",
     "nodemon": "nodemon"
   },

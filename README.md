@@ -18,7 +18,9 @@ Install dependencies using either **yarn** or **npm**
 
 ```bash
 yarn install
----
+
+#   or
+
 npm install
 ```
 
@@ -30,32 +32,27 @@ And you can directly start coding!
 
 ### Development
 
-For running `.ts` files:
+For development, we'll assume you're using `yarn`, but if you're using `npm` instead, adjust the commands appropriately (namely, replace `yarn` with `npm run`).
+
+For running an individual `.ts` file:
 
 ```bash
 yarn ts-node <file.ts>
----
-npm run ts-node <file.ts>
 ```
 
 For development mode:
 
 ```bash
 yarn nodemon
----
-npm run nodemon
 ```
 
-_[nodemon](https://www.npmjs.com/package/nodemon) will automatically restart the application when file changes are detected_
+[nodemon](https://www.npmjs.com/package/nodemon) will automatically restart the application when file changes are detected. This is useful if the tool you're building executes code when run.
 
 ### Linting + Prettier
 
 ```bash
 yarn lint
 yarn prettify
----
-npm run lint
-npm run prettify
 ```
 
 VSCode Users should add this to their workspace settings to integrate JS/TS Linting in general:
@@ -81,16 +78,12 @@ Run and watch all tests:
 
 ```bash
 yarn test:watch
----
-npm run test:watch
 ```
 
 ### Building the App
 
 ```bash
 yarn build
----
-npm run build
 ```
 
 ## Building your app with CircleCI

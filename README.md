@@ -5,16 +5,13 @@
 
 ## Creating a project
 
-Create the project by using **npx**:
-
-_[npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher_
+**Clone this repo**
 
 ```bash
-npx node-typescript-starter-kit my-awesome-project
-cd my-awesome-project
+git clone https://github.com/postlight/nodejs-typescript-kit.git
 ```
 
-Install dependencies using either **yarn** or **npm**
+**Install dependencies using either yarn or npm**
 
 ```bash
 yarn install
@@ -23,10 +20,6 @@ yarn install
 
 npm install
 ```
-
-And you can directly start coding!
-
-![startekit](https://user-images.githubusercontent.com/32297675/53011741-c68e9200-3449-11e9-8746-01bcc0fff247.gif)
 
 ## Starter Kit Documentation
 
@@ -70,8 +63,6 @@ Run all tests:
 
 ```bash
 yarn test
----
-npm test
 ```
 
 Run and watch all tests:

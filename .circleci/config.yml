@@ -26,7 +26,7 @@ jobs:
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "./starter-kitpackage.json" }}
+          key: v1-dependencies-{{ checksum "./starter-kit/package.json" }}
 
       # run linting
       - run: cd starter-kit && yarn lint

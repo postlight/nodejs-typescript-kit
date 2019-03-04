@@ -1,4 +1,4 @@
-# NodeJS - TypeScript Starter Kit
+# NodeJS + Typescript Starter Kit
 
 ## Creating a project
 
@@ -103,7 +103,3 @@ Your environment will have everything you need to build a modern NodeJS - Typesc
 - ESLint and Prettier configs
 - CircleCI configs
 - Pre-commit hooks
-
-  ***
-
-  A micro project from your friends at [Postlight Labs](https://postlight.com/labs)

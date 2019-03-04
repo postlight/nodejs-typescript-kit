@@ -9,31 +9,30 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:latest
 
-    working_directory: ~/starter-kit
+    working_directory: ~/project
 
     steps:
-      - checkout:
-          path: ~/starter-kit
+      - checkout
 
       # Download and cache dependencies
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-{{ checksum "./starter-kit/package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: yarn install
+      - run: cd starter-kit && yarn install
 
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v1-dependencies-{{ checksum "./starter-kitpackage.json" }}
 
       # run linting
-      - run: yarn lint
+      - run: cd starter-kit && yarn lint
 
       # build
-      - run: yarn build
+      - run: cd starter-kit && yarn build
 
       # run tests
-      - run: yarn test
+      - run: cd starter-kit && yarn test

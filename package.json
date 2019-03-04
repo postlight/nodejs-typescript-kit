@@ -4,7 +4,8 @@
   "description": "NodeJS - TypeScript Starter Kit",
   "author": "Postlight",
   "contributors": [
-    "Jad Termsani <jad.termsani@postlight.com>"
+    "Jad Termsani <jad.termsani@postlight.com>",
+    "Adam Pash <adam.pash@postlight.com>"
   ],
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 {
-  "name": "node-typescript-starter-kit",
+  "name": "@postlight/node-typescript-starter-kit",
   "version": "1.0.0",
   "description": "NodeJS - TypeScript Starter Kit",
   "author": "Postlight",
@@ -26,7 +26,7 @@
     "ES6"
   ],
   "scripts": {},
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "chalk": "^2.4.2",
     "edit-json-file": "^1.2.1"

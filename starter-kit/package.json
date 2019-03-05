@@ -1,10 +1,10 @@
 {
-  "name": "my-project",
+  "name": "node-typescript-starter-kit",
   "version": "1.0.0",
   "main": "dist/index.js",
   "repository": "",
   "author": "",
-  "license": "MIT",
+  "license": "",
   "scripts": {
     "build": "tsc",
     "lint": "eslint ./src --ext .ts,.js --fix",

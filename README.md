@@ -3,6 +3,14 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![CircleCI](https://circleci.com/gh/postlight/nodejs-typescript-kit.svg?style=svg)](https://circleci.com/gh/postlight/nodejs-typescript-kit)
 
+This NodeJS + TypeScript starter kit is a zero-config codebase that lets you start writing code immediately. Includes:
+
+* TypeScript or just regular ol' JavaScript
+* Jest for testing
+* Prettier for formatting
+* ESLint for linting
+* Basic config and build scripts
+
 ## Creating a project
 
 Create the project by using **npx**:

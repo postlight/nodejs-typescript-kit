@@ -1,4 +1,14 @@
-# NodeJS + Typescript Starter Kit
+# NodeJS - TypeScript Starter Kit
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
+This NodeJS + TypeScript starter kit is a zero-config codebase that lets you start writing code immediately. Includes:
+
+* TypeScript or just regular ol' JavaScript
+* Jest for testing
+* Prettier for formatting
+* ESLint for linting
+* Basic config and build scripts
 
 ## Creating a project
 
@@ -7,7 +17,7 @@ Create the project by using **npx**:
 _[npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher_
 
 ```bash
-npx node-typescript-starter-kit my-awesome-project
+npx @postlight/node-typescript-starter-kit my-awesome-project
 
 cd my-awesome-project
 ```
@@ -103,3 +113,7 @@ Your environment will have everything you need to build a modern NodeJS - Typesc
 - ESLint and Prettier configs
 - CircleCI configs
 - Pre-commit hooks
+
+  ***
+
+  A micro project from your friends at [Postlight Labs](https://postlight.com/labs)

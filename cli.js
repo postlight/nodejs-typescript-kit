@@ -34,12 +34,16 @@ const createDirectoryContents = async (starterKitPath, newProjectPath) => {
   });
 };
 
-const editJson = async projectName => {
+const editFiles = async projectName => {
   let file = editJsonFile(`${__dirname}/starter-kit/package.json`);
 
   file.set('name', projectName);
-
   file.save();
+
+  fs.rename(
+    `${__dirname}/starter-kit/gitignore`,
+    `${__dirname}/starter-kit/.gitignore`
+  );
 };
 
 const checkDirectory = async () => {
@@ -86,7 +90,7 @@ const run = async () => {
 
   const starterKitPath = `${__dirname}/starter-kit/`;
 
-  await editJson(projectName);
+  await editFiles(projectName);
 
   await asyncMkdir(`${CURR_DIR}/${projectName}`);
 

@@ -1,9 +1,11 @@
-# NodeJS - TypeScript Starter Kit
+![Node.js + TypeScript Starter Kit](https://13c27d41k2ud2vkddp226w55-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/node-js-2.png)
+
+# Node.js + TypeScript Starter Kit
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![CircleCI](https://circleci.com/gh/postlight/nodejs-typescript-kit.svg?style=svg)](https://circleci.com/gh/postlight/nodejs-typescript-kit)
 
-This NodeJS + TypeScript starter kit is a zero-config codebase that lets you start writing code immediately. Includes:
+[Postlight](https://postlight.com)'s Node.js + TypeScript starter kit is a zero-config codebase that lets you start writing code immediately. Includes:
 
 * TypeScript or just regular ol' JavaScript
 * Jest for testing
@@ -115,6 +117,7 @@ Your environment will have everything you need to build a modern NodeJS - Typesc
 - CircleCI configs
 - Pre-commit hooks
 
-  ***
 
-  A micro project from your friends at [Postlight Labs](https://postlight.com/labs)
+---
+
+🔬 A Labs project from your friends at [Postlight](https://postlight.com). Happy coding!

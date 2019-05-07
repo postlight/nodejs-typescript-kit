@@ -5,13 +5,16 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![CircleCI](https://circleci.com/gh/postlight/nodejs-typescript-kit.svg?style=svg)](https://circleci.com/gh/postlight/nodejs-typescript-kit)
 
-[Postlight](https://postlight.com)'s Node.js + TypeScript starter kit is a zero-config codebase that lets you start writing code immediately. Includes:
+[Postlight](https://postlight.com)'s Node.js + TypeScript Starter Kit is a zero-config codebase that lets you start writing code immediately. It includes:
 
-* TypeScript or just regular ol' JavaScript
+* TypeScript (or write just regular ol' JavaScript)
 * Jest for testing
 * Prettier for formatting
 * ESLint for linting
+* CircleCI configs
+* Pre-commit hooks
 * Basic config and build scripts
+
 
 ## Creating a project
 
@@ -37,7 +40,7 @@ npm install
 
 And you can directly start coding!
 
-![startekit](https://user-images.githubusercontent.com/32297675/53011741-c68e9200-3449-11e9-8746-01bcc0fff247.gif)
+![starterkit](https://user-images.githubusercontent.com/32297675/53011741-c68e9200-3449-11e9-8746-01bcc0fff247.gif)
 
 ## Starter Kit Documentation
 
@@ -65,7 +68,7 @@ yarn nodemon
 yarn lint
 ```
 
-VSCode Users should add this to their workspace settings to integrate JS/TS Linting in general:
+VSCode users should add this to their workspace settings to integrate JS/TS linting in general:
 
 ```json
   "eslint.validate": [
@@ -96,7 +99,7 @@ yarn build
 
 ## Building your app with CircleCI
 
-Having already pushed your project to your favorite git-repository hosting service, you're one click away from integrating your app with CircleCI.
+Having already pushed your project to your favorite git repository hosting service, you're one click away from integrating your app with CircleCI.
 
 - Login to [CircleCI](https://circleci.com/)
 - On the left side menu, press `Add Projects`.
@@ -106,16 +109,6 @@ Having already pushed your project to your favorite git-repository hosting servi
 
 CircleCI ensures that every commit is checked for errors before merging.
 This basic setup runs `yarn lint`, `yarn test`, and `yarn build`.
-
-## What's Included?
-
-Your environment will have everything you need to build a modern NodeJS - Typescript application
-
-- Typescript Support
-- Jest unit testing
-- ESLint and Prettier configs
-- CircleCI configs
-- Pre-commit hooks
 
 
 ---

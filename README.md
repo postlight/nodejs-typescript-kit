@@ -15,6 +15,7 @@
 * Pre-commit hooks
 * Basic config and build scripts
 
+Read all about it [this handy introduction](https://postlight.com/trackchanges/introducing-postlights-node-js-typescript-starter-kit).
 
 ## Creating a project
 

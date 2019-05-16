@@ -42,7 +42,11 @@ const editFiles = async projectName => {
 
   fs.rename(
     `${__dirname}/starter-kit/gitignore`,
-    `${__dirname}/starter-kit/.gitignore`
+    `${__dirname}/starter-kit/.gitignore`,
+    function (err) {
+      if (err) throw err;
+      console.log('renamed complete');
+    }
   );
 };
 

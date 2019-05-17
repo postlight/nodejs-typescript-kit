@@ -45,7 +45,6 @@ const editFiles = async projectName => {
     `${__dirname}/starter-kit/.gitignore`,
     function (err) {
       if (err) throw err;
-      console.log('renamed complete');
     }
   );
 };

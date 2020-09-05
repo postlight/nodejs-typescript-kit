@@ -1,6 +1,6 @@
 {
   "name": "@postlight/node-typescript-starter-kit",
-  "version": "1.1.0",
+  "version": "1.2.2",
   "description": "NodeJS - TypeScript Starter Kit",
   "author": "Postlight",
   "contributors": [
@@ -30,13 +30,13 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "chalk": "^2.4.2",
-    "edit-json-file": "^1.2.1"
+    "chalk": "^4.1.0",
+    "edit-json-file": "^1.4.1"
   },
   "bin": {
     "node-typescript-starter-kit": "./cli.js"
   },
   "devDependencies": {
-    "standard-version": "^8.0.1"
+    "standard-version": "^9.0.0"
   }
 }

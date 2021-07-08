@@ -2,47 +2,45 @@
 
 const chalk = require('chalk');
 const editJsonFile = require('edit-json-file');
-const util = require('util');
 const fs = require('fs');
+const path = require('path');
+const util = require('util');
 
 const asyncMkdir = util.promisify(fs.mkdir);
-
-const CURR_DIR = process.cwd();
-const isWindows = process.platform === 'win32';
+const CWD = process.cwd();
 
 const createDirectoryContents = async (starterKitPath, newProjectPath) => {
   const filesToCreate = fs.readdirSync(starterKitPath);
 
   filesToCreate.forEach(file => {
-    const origFilePath = `${starterKitPath}/${file}`;
+    const origFilePath = path.resolve(starterKitPath, file);
+    const writePath = path.resolve(newProjectPath, file);
 
     const stats = fs.statSync(origFilePath);
 
     if (stats.isFile()) {
       const contents = fs.readFileSync(origFilePath, 'utf8');
-
-      const writePath = `${CURR_DIR}/${newProjectPath}/${file}`;
-      fs.writeFileSync(writePath, contents, 'utf8');
-    } else if (stats.isDirectory()) {
-      fs.mkdirSync(`${CURR_DIR}/${newProjectPath}/${file}`);
-
-      createDirectoryContents(
-        `${starterKitPath}/${file}`,
-        `${newProjectPath}/${file}`
+      fs.writeFileSync(
+        path.resolve(CWD, writePath),
+        contents,
+        'utf8'
       );
+    } else if (stats.isDirectory()) {
+      fs.mkdirSync(path.resolve(CWD, writePath);
+
+      createDirectoryContents(origFilePath, writePath);
     }
   });
 };
 
 const editFiles = async projectName => {
-  let file = editJsonFile(`${__dirname}/starter-kit/package.json`);
-
+  let file = editJsonFile(path.resolve(__dirname, 'starter-kit', 'package.json');
   file.set('name', projectName);
   file.save();
 
   fs.rename(
-    `${__dirname}/starter-kit/gitignore`,
-    `${__dirname}/starter-kit/.gitignore`,
+    path.resolve(__dirname, 'starter-kit', 'gitignore'),
+    path.resolve(__dirname, 'starter-kit', '.gitignore'),
     function (err) {
       if (err) throw err;
     }
@@ -56,9 +54,7 @@ const checkDirectory = async () => {
     throw 'You should input 1 argument as the project name';
   } else {
     const projectName = process.argv[2];
-    const directory = isWindows
-      ? `${CURR_DIR}\\${projectName}`
-      : `${CURR_DIR}/${projectName}`;
+    const directory = path.resolve(CWD, projectName);
 
     console.log(`\n\nCreating a new starter kit in ${chalk.cyan(directory)}\n`);
     return projectName;
@@ -91,11 +87,11 @@ const successText = projectName => {
 const run = async () => {
   const projectName = await checkDirectory();
 
-  const starterKitPath = `${__dirname}/starter-kit/`;
+  const starterKitPath = path.resolve(__dirname, 'starter-kit');
 
   await editFiles(projectName);
 
-  await asyncMkdir(`${CURR_DIR}/${projectName}`);
+  await asyncMkdir(path.resolve(CWD, projectName));
 
   await createDirectoryContents(starterKitPath, projectName);
 

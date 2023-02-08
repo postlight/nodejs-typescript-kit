@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.3](https://github.com/postlight/nodejs-typescript-kit/compare/v1.2.2...v1.2.3) (2023-02-08)
+
+### Bug Fixes
+
+* issue where starter kit can only be run once ([#30](https://github.com/postlight/nodejs-typescript-kit/issues/30)) ([3f69af0](https://github.com/postlight/nodejs-typescript-kit/commit/3f69af07a1f106a208bcd74625ff760407169da2))
+
 ### [1.2.2](https://github.com/postlight/nodejs-typescript-kit/compare/v1.2.0...v1.2.2) (2020-09-05)
 
 ## 1.2.0 (2020-09-05)

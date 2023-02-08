@@ -40,13 +40,15 @@ const editFiles = async projectName => {
   file.set('name', projectName);
   file.save();
 
-  fs.rename(
-    `${__dirname}/starter-kit/gitignore`,
-    `${__dirname}/starter-kit/.gitignore`,
-    function (err) {
-      if (err) throw err;
-    }
-  );
+  if (fs.existsSync(`${__dirname}/starter-kit/gitignore`)) {
+    fs.rename(
+      `${__dirname}/starter-kit/gitignore`,
+      `${__dirname}/starter-kit/.gitignore`,
+      function (err) {
+        if (err) throw err;
+      }
+    );
+  }
 };
 
 const checkDirectory = async () => {

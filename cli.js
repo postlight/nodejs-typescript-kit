@@ -40,13 +40,15 @@ const editFiles = async projectName => {
   file.set('name', projectName);
   file.save();
 
-  fs.rename(
-    `${__dirname}/starter-kit/gitignore`,
-    `${__dirname}/starter-kit/.gitignore`,
-    function (err) {
-      if (err) throw err;
-    }
-  );
+  if (fs.existsSync(`${__dirname}/starter-kit/gitignore`)) {
+    fs.rename(
+      `${__dirname}/starter-kit/gitignore`,
+      `${__dirname}/starter-kit/.gitignore`,
+      function (err) {
+        if (err) throw err;
+      }
+    );
+  }
 };
 
 const checkDirectory = async () => {
@@ -65,7 +67,13 @@ const checkDirectory = async () => {
   }
 };
 
-const successText = projectName => {
+const checkProjectName = async (projectPath) => {
+  if (fs.existsSync(projectPath)) {
+    throw `ERROR: Project already exists in directory:: ${projectPath}`;
+  }
+};
+
+const successText = (projectName) => {
   const successText = `Success! Created ${chalk.cyan(
     projectName
   )} at ${chalk.cyan(CURR_DIR)} 
@@ -92,6 +100,8 @@ const run = async () => {
   const projectName = await checkDirectory();
 
   const starterKitPath = `${__dirname}/starter-kit/`;
+
+  await checkProjectName(`${CURR_DIR}/${projectName}`);
 
   await editFiles(projectName);
 

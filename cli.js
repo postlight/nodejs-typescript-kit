@@ -67,7 +67,13 @@ const checkDirectory = async () => {
   }
 };
 
-const successText = projectName => {
+const checkProjectName = async (projectPath) => {
+  if (fs.existsSync(projectPath)) {
+    throw `ERROR: Project already exists in directory:: ${projectPath}`;
+  }
+};
+
+const successText = (projectName) => {
   const successText = `Success! Created ${chalk.cyan(
     projectName
   )} at ${chalk.cyan(CURR_DIR)} 
@@ -94,6 +100,8 @@ const run = async () => {
   const projectName = await checkDirectory();
 
   const starterKitPath = `${__dirname}/starter-kit/`;
+
+  await checkProjectName(`${CURR_DIR}/${projectName}`);
 
   await editFiles(projectName);
 
